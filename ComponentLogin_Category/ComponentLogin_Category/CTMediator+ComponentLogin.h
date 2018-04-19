@@ -13,4 +13,6 @@
 
 - (UIViewController *)ComponentLogin_loginViewControllerWithCallback:(void(^)(NSString *result))callback;
 
+- (UIViewController *)ComponentLogin_NewLoginViewControllerWithCallback:(void(^)(NSDictionary *info))callback;
+
 @end

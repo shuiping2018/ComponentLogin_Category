@@ -17,4 +17,11 @@
     return [self performTarget:@"ComponentLogin" action:@"viewController" params:params shouldCacheTarget:NO];
 }
 
+- (UIViewController *)ComponentLogin_NewLoginViewControllerWithCallback:(void(^)(NSDictionary *info))callback
+{
+    NSMutableDictionary * params = [[NSMutableDictionary alloc] init];
+    params[@"callback"] = callback;
+    return [self performTarget:@"ComponentLogin" action:@"viewController" params:params shouldCacheTarget:NO];
+}
+
 @end
